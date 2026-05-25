@@ -34,8 +34,10 @@
     {"name":"spr_background02","order":2,"path":"sprites/spr_background02/spr_background02.yy",},
     {"name":"spr_explosion02","order":1,"path":"sprites/spr_explosion02/spr_explosion02.yy",},
     {"name":"spr_missile","order":2,"path":"sprites/spr_missile/spr_missile.yy",},
-    {"name":"spr_nuke","order":3,"path":"sprites/spr_nuke/spr_nuke.yy",},
+    {"name":"spr_moon","order":3,"path":"sprites/spr_moon/spr_moon.yy",},
+    {"name":"spr_planet","order":5,"path":"sprites/spr_planet/spr_planet.yy",},
     {"name":"spr_ship02","order":1,"path":"sprites/spr_ship02/spr_ship02.yy",},
     {"name":"spr_ship03","order":2,"path":"sprites/spr_ship03/spr_ship03.yy",},
+    {"name":"spr_sm_planet","order":4,"path":"sprites/spr_sm_planet/spr_sm_planet.yy",},
   ],
 }

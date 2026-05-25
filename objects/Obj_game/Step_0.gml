@@ -20,6 +20,7 @@ switch(game_state){
 		audio_play_sound(snd_Retro_Platforming, 100, true)
 		player_lives = 3
 		player_score = 0
+		current_round = 1
 		game_state = GameState.StartRound
 		
 		break
@@ -30,11 +31,27 @@ switch(game_state){
 		break
 		
 	 case  GameState.StartRound:
-		if (instance_number(Obj_asteroid) == 0){
-			repeat(4){
+		var total_enemies = instance_number(Obj_asteroid) +
+							instance_number(Obj_moon) +
+							instance_number(Obj_small_planet) +
+							instance_number(Obj_planet)
+	 
+		if (total_enemies == 0){
+			
+			var spawn_count = 3 + current_round
+			repeat(spawn_count){
 				var sx = choose(0, room_width)
 				var sy = choose(0, room_height)
-				spawn_asteroid(sx, sy, Size.Large)
+				
+				if(current_round == 1){
+					spawn_asteroid(sx, sy, Size.Large)
+				}else if (current_round == 2){
+					instance_create_layer(sx, sy, "Instances", Obj_moon)
+				}else if (current_round == 3){
+					instance_create_layer(sx, sy, "Instances", Obj_small_planet)
+				}else{
+					instance_create_layer(sx, sy, "Instances", Obj_planet)
+				}
 			}
 		}
 		
@@ -48,7 +65,15 @@ switch(game_state){
 		break
 		
 	 case  GameState.Round:
-		if (instance_number(Obj_asteroid) == 0) game_state = GameState.StartRound
+	 	var total_enemies = instance_number(Obj_asteroid) +
+							instance_number(Obj_moon) +
+							instance_number(Obj_small_planet) +
+							instance_number(Obj_planet)
+	 
+		if (total_enemies == 0){ 
+			current_round += 1
+			game_state = GameState.StartRound
+		}
 		break
 		
 	 case  GameState.StartEndRound:

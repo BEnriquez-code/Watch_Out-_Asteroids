@@ -31,3 +31,15 @@ function damage_enemy(enemy, projectile, damage_amount, score_award, explosion_s
 		}
 	}
 }
+
+
+function initialize_space_object(moving_object, move_speed, max_spin, scale){
+    moving_object.direction = random_range(0, 360);
+    moving_object.image_angle = random_range(0, 360);
+    moving_object.speed = move_speed;
+    moving_object.rotation_rate = random_range(-max_spin, max_spin);
+    
+   
+    moving_object.image_xscale = scale;
+    moving_object.image_yscale = scale;
+}

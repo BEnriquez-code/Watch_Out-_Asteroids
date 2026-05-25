@@ -1,5 +1,2 @@
 direction = random_range(0, 360)
-image_angle = random_range(0, 360)
-
-speed = 0.5
-rotation_rate = random_range(-0.5, 0.5)
+initialize_space_object(self, 2.0, 0.5, 4)

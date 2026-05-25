@@ -49,6 +49,7 @@
     {"id":{"name":"src_asteroids","path":"scripts/src_asteroids/src_asteroids.yy",},},
     {"id":{"name":"src_game","path":"scripts/src_game/src_game.yy",},},
     {"id":{"name":"src_helper","path":"scripts/src_helper/src_helper.yy",},},
+    {"id":{"name":"src_planets","path":"scripts/src_planets/src_planets.yy",},},
     {"id":{"name":"snd_explosion_large","path":"sounds/snd_explosion_large/snd_explosion_large.yy",},},
     {"id":{"name":"snd_explosion_medium","path":"sounds/snd_explosion_medium/snd_explosion_medium.yy",},},
     {"id":{"name":"snd_explosion_small","path":"sounds/snd_explosion_small/snd_explosion_small.yy",},},

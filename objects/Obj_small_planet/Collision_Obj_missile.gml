@@ -1,0 +1,1 @@
+damage_enemy(self, other, 1, 400, snd_explosion_medium)

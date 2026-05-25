@@ -25,6 +25,7 @@
     {"name":"rm_title","order":1,"path":"rooms/rm_title/rm_title.yy",},
     {"name":"src_asteroids","order":1,"path":"scripts/src_asteroids/src_asteroids.yy",},
     {"name":"src_game","order":2,"path":"scripts/src_game/src_game.yy",},
+    {"name":"src_planets","order":3,"path":"scripts/src_planets/src_planets.yy",},
     {"name":"snd_explosion_large","order":4,"path":"sounds/snd_explosion_large/snd_explosion_large.yy",},
     {"name":"snd_explosion_small","order":1,"path":"sounds/snd_explosion_small/snd_explosion_small.yy",},
     {"name":"snd_fire","order":2,"path":"sounds/snd_fire/snd_fire.yy",},

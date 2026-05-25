@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"src_planets",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"src_planets",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

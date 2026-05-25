@@ -74,15 +74,6 @@ function destroy_asteroid(asteroid)
   }
 }
 
-function destroy_planet_object(enemy_instance, score_value, sound_asset){
-	with(enemy_instance){
-		instance_create_layer(x, y, "Instances", Obj_explosion)
-		global.game.player_score += score_value
-		
-		audio_play_sound(sound_asset, 10, false)
-		instance_destroy()
-	}
 
-}
 
  

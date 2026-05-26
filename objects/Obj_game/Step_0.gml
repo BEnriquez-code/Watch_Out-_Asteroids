@@ -49,9 +49,18 @@ switch(game_state){
 					instance_create_layer(sx, sy, "Instances", Obj_moon)
 				}else if (current_round == 3){
 					instance_create_layer(sx, sy, "Instances", Obj_small_planet)
-				}else{
+				}else if (current_round == 4){
 					instance_create_layer(sx, sy, "Instances", Obj_planet)
+				}else{
+					var random_object = choose("asteroid", Obj_moon, Obj_small_planet, Obj_planet)
+					
+					if(random_object == "asteroid"){
+						spawn_asteroid(sx, sy, Size.Large)
+					}else {
+						spawn_planets(sx, sy, random_object)
+					}
 				}
+				
 			}
 		}
 		

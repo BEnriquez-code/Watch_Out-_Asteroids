@@ -43,3 +43,7 @@ function initialize_space_object(moving_object, move_speed, max_spin, scale){
     moving_object.image_xscale = scale;
     moving_object.image_yscale = scale;
 }
+
+function spawn_planets(_x, _y, _object){
+	instance_create_layer(_x, _y, "Instances", _object)
+}

@@ -96,8 +96,13 @@ switch(game_state){
 		alarm[0] = seconds(2)
 		break
 	 case  GameState.PlayerDead:
+	 
 		break
 	 case  GameState.GameOver:
+	 audio_stop_all()
+	 room_goto(rm_title)
+	 game_state = GameState.Title
+	 
 		break
 
 }
